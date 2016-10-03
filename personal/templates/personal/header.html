@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<script>
+	$(window).scroll(function() {
+		$('#RowA, #RowB, #RowC, #ourStack0').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("expandUp");
+			}
+		});
+	});
+	
+		$(window).scroll(function() {
+		$('#ourStack1').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("pullUp");
+			}
+		});
+	});
+	
+	
+	
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#ourStack1, #ourStack2, #ourStack3, #ourStack4, #ourStack5, #ourStack6, #ourStack7').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("hatch");
+			}
+		});
+	});
+	
+		$(window).scroll(function() {
+		$('#ourStack1').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("stretchRight");
+			}
+		});
+	});
+	
+	
+	
+</script>
+
+<script>
+	$(window).scroll(function() {
+		$('#f1, #f2, #f3, #f4, #f5, #f6, #f7').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideExpandUp");
+			}
+		});
+	});
+	
+		$(window).scroll(function() {
+		$('#ourStack1').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+600) {
+				$(this).addClass("stretchRight");
+			}
+		});
+	});
+	
+	
+	
+</script>
+
+
+	<title>Palo Verde Consulting Group</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=false;">
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.css' %}" type = "text/css"/>
+
+
+
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+
+  <div class="container-fluid" style="font-color:black">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+	  <img src="{% static 'personal\img\logo.png' %}" alt="logo" style="width:334px;height:100px;border:0;float:right">
+    </div>
+    <ul class="nav navbar-nav">
+	
+	
+      <li class="active">
+	  <a href="#" style="font-size: 20px;" >Home</a></li>
+	  
+	        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="RowA">Solutions
+        <span class="caret font-size: 20px"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#RowA">Analytics</a></li>
+          <li><a href="#RowB">Accounting</a></li>
+          <li><a href="#RowC">Technology</a></li> 
+        </ul>
+      </li>
+
+      <li><a href="#ourStack" style="width:auto;height:100px;border:0;font-size: 20px;"">Our Stack</a></li> 
+	  <li><a href="#" style="width:auto;height:100px;border:0;font-size: 20px;"">Portfolio</a></li>
+	  <li><a href="#" style="width:auto;height:100px;border:0;font-size: 20px;"">Contact Us</a></li>
+	  <li><a href="#" style="width:auto;height:100px;border:0;font-size: 20px;"">Blog</a></li>
+	  <li><a href="#" style="width:auto;height:100px;border:0;font-size: 20px;"">About Us</a></li> 
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+
+  </div>
+</nav>
+	
+	{% block content %}
+	{% endblock %}	
+	<style type="text/css">
+		html,
+		.body {
+		  height:100%
+		  width: 100%
+		}
+	</style>
+
+<div class="container-fluid">
+  <div class="row" style="background-color:white; height:auto">
+    <div class="col-sm-6" style="background-color:white;"> 
+	<font color="black">
+<h2 style="color:#716558" style="color:#716558">What our customers say</h2 style="color:#716558">
+</font>
+<div id="myCarousel01" class="carousel0 slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators";>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4 style="color:#716558">"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4 style="color:#716558">
+    </div>
+    <div class="item">
+      <h4 style="color:#716558">"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4 style="color:#716558">
+    </div>
+    <div class="item">
+      <h4 style="color:#716558">"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4 style="color:#716558">
+    </div>
+  </div>
+
+  <!-- Left and right controls 
+  <a class="left carousel-control" href="#myCarousel01" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel01" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>-->
+  </a>
+
+</div>
+	
+    </div>
+
+
+
+
+
+
+    <div class="col-sm-6" style="background-color:white; height:auto;">
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo size:40px pulse"></span> 
+    </div>
+    <div class="col-sm-8">
+      <h2 style="color:#716558">Our Values</h2 style="color:#716558">
+      <h4 style="color:#716558"><strong>Our mission</h4 style="color:#716558"></strong><h5 style="color:#716558"> is to provide the best quality services and products to buisinesses and organizations to facilitate their growth and success</h5 style="color:#716558"> 
+      <h4 style="color:#716558"><strong>Our vision:</h4 style="color:#716558"></strong><h5 style="color:#716558"> is to serve as an incubator to the health of our community and economy.</h5 style="color:#716558">
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" style="height:0;" >
+
+  <style>	
+ 
+body { 
+    background-image: url("{% static 'personal\img\5.png' %}");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100%;
+	margin-top: 20px;
+	background-position: bottom;
+
+}
+
+
+
+
+</style>
+</div>
+ 
+</div>
+</div>
+
+<div class="row" style="background-color:none; height:auto;">
+
+<div id="RowA" class="container-fluid text-center rowServ" style="background-color:none; height:auto;">
+
+  <h1> <u>Analytics</u></h1>
+
+  <div class="row">
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-book"></span>
+      <h4>Feasibility Studies</h4>
+
+
+    </div>
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-pencil"></span>
+      <h4>Job Analysis</h4>
+    </div>
+    <div class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-stats"></span>
+      <h4>Data Analysis</h4>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-leaf"></span>
+      <h4>Environmental Analysis</h4>
+    </div>
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-tasks"></span>
+      <h4>Big Data</h4>
+    </div>
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-wrench"></span>
+      <h4>Machine Learning</h4>
+	   </div>
+	  
+  </div>
+  <p></p>
+</div>
+
+<div id="RowB" class="container-fluid text-center rowServ" style="background-color:none; height:auto;">
+  <h1> <u>Accounting </u></h1>
+  <div class="row">
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-edit"></span>
+      <h4>Accounting Systems</h4>
+	  
+    </div>
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-user"></span>
+      <h4>Payroll Services</h4>
+    </div>
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="	glyphicon glyphicon-barcode"></span>
+      <h4>Inventory Systems</h4>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-open-file"></span>
+      <h4>Accounting Statements</h4>
+    </div>
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-duplicate"></span>
+      <h4>Financial Analysis</h4>
+    </div>
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-briefcase"></span>
+      <h4>Financial Advising</h4>
+	   </div>
+	   <p></p>
+  </div>
+ </div>
+ 
+ <div id="RowC" class="container-fluid text-center rowServ" style="background-color:none;">
+  <h1><u>Technology</u></h1>
+  <br>
+  <div class="row">
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-globe"></span>
+      <h4>Web Development</h4>
+	  
+    </div>
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-option-horizontal"></span>
+      <h4>User Management Systems</h4>
+    </div>
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-hdd"></span>
+      <h4>Server Setup</h4>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div class="col-sm  btn btn-primary active  btn btn-primary active  btn btn-primary active">
+      <span class="	glyphicon glyphicon-resize-small"></span>
+      <h4>Server Migration</h4>
+    </div>
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="	glyphicon glyphicon-tasks"></span>
+      <h4>Database Design</h4>
+    </div>
+    <div id="row" class="col-sm  btn btn-primary active" data-toggle="modal" data-target="#myModal">
+      <span class="	glyphicon glyphicon-cloud"></span>
+      <h4>Cloud Services</h4>
+	   </div>
+	   <p></p>
+  </div>
+ </div>
+
+</div>
+
+<div id="ourStack" class="container-fluid text-left row" style="background-color:#7EC677; height:auto; font-size=80px;">
+<h1 id="ourStack0" style="font-size:50px; margin-top:50px; pulse; visibility:hidden;">Our Stack</h1>
+<h2 id="ourStack1" style="font-size:30px; visibility:hidden; text-align:center;">Front-End</h2>
+<div id="f1" class="row" align="center" style="visibility:hidden;">
+<img src="{% static 'personal\img\f12.png' %}" style="width:auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f2.svg' %}" style="width: auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f3.gif' %}" style="width: auto; height: auto;max-width:100px;max-height: auto">
+<img src="{% static 'personal\img\f19png.png' %}" style="width: auto; height: auto;max-width:200px;max-height: auto">
+
+</div>
+<h2 id="ourStack2" style="font-size:30px; visibility:hidden; text-align:center;">Design</h2>
+<div id="f2" class="row" align="center" style="visibility:hidden;">
+<img src="{% static 'personal\img\f18.png' %}" style="width:auto; height: auto;max-width:101px;max-height: auto">
+<img src="{% static 'personal\img\f11.png' %}" style="width: auto; height: auto;max-width:100px;max-height: auto">
+</div>
+<h2 id="ourStack3" style="font-size:30px; visibility:hidden; text-align:center;">Back-End</h2>
+<div id="f3" class="row" align="center" style="visibility:hidden;">
+<img src="{% static 'personal\img\f1.png' %}" style="width:auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f4.png' %}" style="width: auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f5.png' %}" style="width: auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f6.png' %}" style="width: auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f7.png' %}" style="width: auto; height: auto;max-width:200px;max-height: auto">
+</div>
+
+<h2 id="ourStack4" style="font-size:30px; visibility:hidden; text-align:center;">Databases</h2>
+<div id="f4" class="row" align="center" style="visibility:hidden;">
+<img src="{% static 'personal\img\f9.png' %}" style="width:auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f10.png' %}" style="width: auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f13.png' %}" style="width: auto; height: auto;max-width:200px;max-height: auto">
+</div>
+
+<h2 id="ourStack5" style="font-size:30px; visibility:hidden; text-align:center;">Hosting</h2>
+<div id="f5" class="row" align="center" style="visibility:hidden;">
+<img src="{% static 'personal\img\f20.png' %}" style="width:auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f8.png' %}" style="width: auto; height: auto;max-width:200px;max-height: auto">
+</div>
+
+<h2 id="ourStack6" style="font-size:30px; visibility:hidden; text-align:center;">Data Science</h2>
+<div id="f6" class="row" align="center" style="visibility:hidden;">
+<img src="{% static 'personal\img\f14.png' %}" style="width:auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\mathplotlb.svg' %}" style="width:auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f22.png' %}" style="width:auto; height: auto;max-width:90px;max-height: auto">
+<img src="{% static 'personal\img\f23.png' %}" style="width:auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f24.svg' %}" style="width:auto; height: auto;max-width:150px;max-height: auto">
+<img src="{% static 'personal\img\f25.png' %}" style="width:auto; height: auto;max-width:100px;max-height: auto">
+</div>
+
+<h2 id="ourStack7" style="font-size:30px; visibility:hidden; text-align:center;">Accounting</h2>
+<div id="f7" class="row" align="center" style="visibility:hidden;">
+<img src="{% static 'personal\img\f16.png' %}" style="width:auto; height: auto;max-width:200px;max-height: auto">
+<img src="{% static 'personal\img\f17.png' %}" style="width:auto; height: auto;max-width:100px;max-height: auto">
+<img src="{% static 'personal\img\f21.png' %}" style="width:auto; height: auto;max-width:150px;max-height: auto">
+<img src="{% static 'personal\img\f18.gif' %}" style="width:auto; height: auto;max-width:150px;max-height: auto">
+</div>
+
+</div>
+
+
+
+
+
+<div class="container-fluid text-center row" style="background-color:#6EBAE7; height:800px;">
+
+<form action="#RowA" method="post"> {% csrf_token %}
+	  <ul>
+	  {{form.as_ul}}
+	  </ul>
+  <input type="submit" value="Submit">
+</form>
+
+</div>
+	
+
+ </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Register</h4>
+      </div>
+      <div class="modal-body">
+	  
+	  <form action="#RowA" method="post"> {% csrf_token %}
+	  <ul>
+	  {{form.as_ul}}
+	  </ul>
+  <input type="submit" value="Submit">
+</form>
+	  
+	  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+
+
+</html>
